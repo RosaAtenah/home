@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mettez en ligne</title>
+    <link rel="stylesheet" href="Server.css">
+</head>
+<body>
+    <form action="http://www.cgi.com/cgi-bin/activate.cgi" method="get">
+        <div class="box">
+            <div class="c">
+                <p>Le but de ce programme est de mettre en ligne vos fichiers !!! </p>
+            </div>
+            <div class="a">
+                <p>Veuillez remplir ce formulaire</p>
+                <br>
+                <label for="doc">Document Root du fichier : </label>
+                <input type="text" name="Document" id="doc">
+                <label for="mail">contact du webmaster  (email) :</label>
+                <input type="email" name="webmaster" id="mail">
+            </div>
+            <div class="b">
+                <label for="serverName">Nom de votre site (serverName) : </label>
+                <input type="text" name="serverName" id="serverName">
+                <label for="file">Le nom de votre fichier que vous voulez par défaut: </label>
+                <input type="text" name="file" id="file">
+                <input type="submit" value="mettre en ligne" class="submit">
+            </div>
+        </div>
+        
+    </form>
+
+    
+</body>
+</html>

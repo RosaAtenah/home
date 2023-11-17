@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table{
+    border-collapse: collapse;
+    width: 70vw;
+    min-width: 400px;
+    box-shadow: 0 0 5px;
+    margin-top: 75px;
+    border: 1px solid black;
+    margin-bottom: 10vw;
+}
+tr:first-child{
+    background: black;
+    color: white;
+}
+tr:first-child{
+    font-size: 1.3rem;
+    font: bold;
+    font-weight: 700;
+    color: white;
+    margin: 10px 5px;
+}
+table tr.paire{
+    background-color: rgba(44, 59, 102, 0.329);
+}
+table tr.impaire{
+    background-color: rgba(159, 174, 214, 0.329);
+}
+tr:not(:first-child) td:first-child{
+    text-align: center;
+    color: rgb(100, 100, 100);
+}
+td{
+    width: auto;
+    min-width: 7Opx;
+    max-width: 300px;
+    text-align: center;
+    padding: 10px;
+}
+tr:not(:first-child) td:last-child{
+    color: black;
+}

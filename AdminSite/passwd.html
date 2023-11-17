@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body{
+            justify-content: center;
+            text-align: center;
+            background-color:#113946;
+        }
+        label,h3{
+            display: block;
+            padding: 1.5vw;
+        }
+        input{
+            display: block;
+            margin: auto;
+            width: 30vw;
+            height: 2vw;
+            border-radius: 10px;
+            box-shadow: none;
+        }
+        a{
+            background-color:#EAD7BB;
+            width: 15vw;
+            height: 4vw;
+            padding: 1vw;
+            border-radius: 2vw;
+            margin: 3vw;
+            
+        }
+        div{
+            background-color:#BCA37F;
+            width: 50vw;
+            height: 30vw;
+            margin: auto;
+            margin-top: 10vw;
+            justify-content: center;
+            text-align: center;
+            border-radius: 2vw;
+            box-shadow:10px 10px black ;
+        }
+
+        .submit{
+            margin-bottom: 90%;
+            width: 10vw;
+        }
+        
+    </style>
+</head>
+<body>
+    <form action="http://www.cgi.com/cgi-bin/passwd.cgi" method="get">
+        <div class="box">
+            <h3>complete your information here to change your password</h3>
+            
+            <a href="http://www.andrana.com/sign.html">sign in</a>
+            <a href="http://www.cgi.com/cgi-bin/login.cgi">log in</a>
+            <label for="">Enter your last User</label>
+            <input type="text" name="login" required >
+            <label for="">Your New Password</label>
+            <input type="password" name="password" id="pwd" pattern="{5,}" required>
+            <br>
+            <input type="submit" value="Comfirm" class="submit">
+        </div>
+    </form>
+</body>
+</html>

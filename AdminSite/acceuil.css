@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg,#5C3D2E,#474343);
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+    align-items: center;
+}
+
+.container .card{
+    position: relative;
+    width: 350px;
+    height: 300px;
+    background: #735F32;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+    justify-content: center;
+    display: flex;
+    align-items: flex-start;
+}
+
+.container .card:hover{
+    height: 400px;
+}
+
+.container .card .imgBox{
+    text-align: center;
+    color: #E5E5CB;
+    position: absolute;
+    background: #3C2A21;
+    border-radius: 12px;
+    transition: 0.5s;
+    height: 220px;
+    width: 300px;
+    top: 20px;
+    overflow: hidden;
+}
+.container .card .imgBox p{
+    margin-top:  100px;;
+    
+}
+.container .card:hover .imgBox{
+    top:-100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.container .card .imgBox p{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.container .card .content{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    overflow: hidden;
+    top: 252px;
+    padding: 0 30px;
+    transition: 0.5s
+}
+
+.container .card:hover .content{
+    height: 250px;
+    top: 130px;
+}
+
+.container .card .content h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--clr);
+}
+
+.container .card .content p{
+    color: #E5E5CB;
+}
+
+.container .card .content a{
+     position: relative;
+     top: 15px;
+     display: inline-block;
+     padding: 12px 25px;
+     background: var(--clr);
+     color: #3C2A21;
+     border-radius: 5px;
+     font-weight: 500;
+     text-decoration: none;
+}
+
+.head {
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    background-color: #735F32;
+    width: 100%;
+    padding: 10px; /* Ajoutez un peu d'espacement si nécessaire */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ajoutez une ombre si vous le souhaitez */
+    position: fixed;
+    top: 0;
+}
+
+.head a{
+    color: #fff;
+}
+.container {
+    /* Ajoutez une marge en haut pour éviter que le contenu ne soit caché derrière le .head */
+    margin-top: 50px; /* Vous pouvez ajuster cette valeur en fonction de vos besoins */
+}
+
